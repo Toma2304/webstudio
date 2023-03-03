@@ -1,12 +1,4 @@
 
-/* Основной цвет  #212121 */
-/* Вторичный цвет   #757575 */
-/* Белый #FFFFFF */
-/* Акцент #2196F3 */
-/* Ссылки (футер) gba(255, 255, 255, 0.6) */
-/* БГ(темный) #2F303A */
-/* БГ(светлый) #F5F4FA */
-
 :root {
     --primary-text-color: #434455;
     --title-text-color: #2E2F42;
@@ -17,7 +9,6 @@
 
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
-    --icon-color: #AFB1B8;
     --button-bg: #F4F4FD;
 
     --icon-bg: rgba(255, 255, 255, 0.1);
@@ -471,11 +462,11 @@ body {
     padding: 16px 32px;
     width: 170px;
     height: 92px;
-    border: 1px solid var(--icon-color);
+    border: 1px solid var(--primary-bg-color);
     display: flex;
     box-sizing: border-box;
     border-radius: 4px;
-    fill: var(--icon-color);
+    fill: var(--primary-bg-color);
 
     transition-property: color background-color;
     transition-duration: 250ms;
@@ -626,6 +617,14 @@ body {
     background-color: var(--accent-color);
     color: var(--primary-bg-color);
     border: none;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover, .subscribe-button:focus {
+    background-color: var(--dark-accent);
 }
 
 .telegram-subscribe {

@@ -11,7 +11,7 @@
     --secondary-bg-color: #F5F4FA;
     --button-bg: #F4F4FD;
 
-    --icon-bg: rgba(255, 255, 255, 0.1);
+    --icon-bg: #8E8F99;
     
     --text-bg: rgba(47, 48, 58, 0.8);
     --overlay: rgba(46, 47, 66, 0.4);
@@ -433,7 +433,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: var(--icon-color);
+    fill: var(--primary-bg-color);
 
     transition-property: color background-color;
     transition-duration: 250ms;
@@ -466,7 +466,7 @@ body {
     display: flex;
     box-sizing: border-box;
     border-radius: 4px;
-    fill: var(--primary-bg-color);
+    fill: var(--icon-bg);
 
     transition-property: color background-color;
     transition-duration: 250ms;

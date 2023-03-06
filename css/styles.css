@@ -212,7 +212,7 @@ img {
 
 
 .hero-title {
-    width: 320px;
+    width: 75%;
 
     margin-top: 0;
     margin-bottom: 72px;
@@ -970,6 +970,12 @@ img {
         max-width: 428px;
     }
 
+    /* HERO */
+
+    .hero-title {
+        width: 320px;
+    }
+
     /* OVERLAY */
 
     .modal {
@@ -997,9 +1003,9 @@ img {
     /* HERO */
 
     .hero-title {
-        margin-bottom: 40px;
-
         width: 496px;
+
+        margin-bottom: 40px;
 
         font-size: 56px;
         line-height: 60px;

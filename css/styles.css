@@ -136,7 +136,6 @@ img {
 
 .mob-close {
     margin-bottom: 32px;
-    padding: 8px;
 
     display: block;
     margin-left: auto;
@@ -835,8 +834,6 @@ img {
 }
 
 .modal-close {
-    padding: 8px;
-    
     position: absolute;
     top: 24px;
     right: 24px;

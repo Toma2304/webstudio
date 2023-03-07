@@ -835,6 +835,8 @@ img {
 }
 
 .modal-close {
+    padding: 8px;
+    
     position: absolute;
     top: 24px;
     right: 24px;

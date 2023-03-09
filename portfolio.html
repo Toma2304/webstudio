@@ -32,25 +32,97 @@
          <ul class="contacts-nav list">
              <li class="item">
                  <a href="mailto:info@devstudio.com" class="link">
-                     <svg class="contacts-icon" width="16" height="12">
-                     <use 
-                         href="./images/icons.svg#envelope">
-                     </use>
-                     </svg>
                       info@devstudio.com
                  </a>
              </li>
              <li class="item">
                  <a href="tel:+380961111111" class="link">
-                     <svg class="contacts-icon" width="10" height="16">
-                         <use 
-                             href="./images/icons.svg#smartphone">
-                         </use>
-                     </svg>
                      +11 (000) 111-11-11
                  </a>
              </li>
          </ul>
+ 
+         <button class="menu-open js-open-menu" aria-expanded="false"
+         aria-controls="mobile-menu">
+             <svg class="menu-open-icon" width="32" height="22" >
+             <use 
+                 href="./images/menu-close.svg">
+             </use>
+             </svg>
+         </button>
+        </div>
+ 
+        <div class="mob-menu js-menu-container is-hidden" id="mobile-menu">
+             <div class="container">
+                 <div class="">
+                     <button type="button"  class="mob-close js-close-menu">
+                         <svg width="8" height="8" class="modal-icon">
+                             <use href="./images/icons.svg#close-black">
+                             </use>
+                         </svg>
+                     </button>
+                     <ul class="mob-menu-list list">
+                         <li class="item"><a href="./index.html" class="link current">Studio</a></li>
+                         <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+                         <li class="item"><a href="" class="link con">Contacts</a></li>
+                     </ul>
+                 </div>
+     
+                 <div class="">
+                     <ul class="mob-menu-contacts list">
+                         <li class="item">
+                             <a href="tel:+380961111111" class="link tel">
+                                 +11 (000) 111-11-11
+                             </a>
+                         </li>
+     
+                         <li class="item">
+                             <a href="mailto:info@devstudio.com" class="link">
+                                 info@devstudio.com
+                             </a>
+                         </li>
+                     </ul>
+         
+                     <ul class="mob-soc-list list">
+                         <li class="mob-soc">
+                             <a href="" class="mob-soc-list-link">
+                                 <svg class="mob-soc-list-icon" width="20" height="20">
+                                     <use 
+                                        href="./images/icons.svg#instagram">
+                                     </use>
+                                 </svg>
+                             </a>
+                        </li>
+                         <li class="mob-soc">
+                             <a href="" class="mob-soc-list-link">
+                                 <svg class="mob-soc-list-icon" width="20" height="20">
+                                     <use 
+                                        href="./images/icons.svg#twitter">
+                                     </use>
+                                 </svg>
+                             </a>
+                        </li>
+                         <li class="mob-soc">
+                             <a href="" class="mob-soc-list-link">
+                                 <svg class="mob-soc-list-icon" width="20" height="20">
+                                     <use 
+                                        href="./images/icons.svg#facebook">
+                                     </use>
+                                 </svg>
+                             </a>
+                        </li>
+                         <li class="mob-soc">
+                             <a href="" class="mob-soc-list-link">
+                                 <svg class="mob-soc-list-icon" width="20" height="20">
+                                     <use 
+                                        href="./images/icons.svg#linkedin">
+                                     </use>
+                                 </svg>
+                             </a>
+                        </li>
+                     </ul>
+                 </div>
+             </div>
         </div>
      </header>
 
@@ -58,7 +130,7 @@
 
         <!--Portfolio-->
         <section class="portfolio">
-            <div class="container section">
+            <div class="container">
                 <h1 hidden>Portfolio</h1> 
                 <!-- hidden стоит временно -->
                 <ul class="portfolio-filter list">
@@ -72,7 +144,31 @@
                 <ul class="portfolio-work list">
                     <li class="item">
                        <div class="portfolio-image">
-                            <img src="./images/products-1.jpg" alt="BankApps on the phone" width="370" height="294" class="picture">
+                            <picture>
+                                <source 
+                                    srcset="
+                                    ./images/products-1.jpg 1x, 
+                                    ./images/products-1-2x.jpg 2x"
+                                    
+                                    media="(min-width: 1200px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-1-tab.jpg 1x, 
+                                    ./images/products-1-tab-2x.jpg 2x"
+                                    
+                                    media="(min-width: 768px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-1-mob.jpg 1x, 
+                                    ./images/products-1-mob-2x.jpg 2x"
+                                    
+                                    media="(max-width: 767px)"
+                                >
+
+                                <img src="./images/products-1-mob.jpg" alt="BankApps on the phone" class="picture">
+                            </picture>
 
                                <div class="overlay">
                                 <p class="portfolio-description">
@@ -88,7 +184,31 @@
                     <li class="item">
 
                         <div class="portfolio-image">
-                            <img src="./images/products-2.jpg" alt="Phone scans the code" width="370" height="294" class="picture">
+                            <picture>
+                                <source 
+                                    srcset="
+                                    ./images/products-2.jpg 1x, 
+                                    ./images/products-2-2x.jpg 2x"
+                                    
+                                    media="(min-width: 1200px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-2-tab.jpg 1x, 
+                                    ./images/products-2-tab-2x.jpg 2x"
+                                    
+                                    media="(min-width: 768px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-2-mob.jpg 1x, 
+                                    ./images/products-2-mob-2x.jpg 2x"
+                                    
+                                    media="(max-width: 767px)"
+                                >
+
+                                <img src="./images/products-2-mob.jpg" alt="Scan the code" class="picture">
+                            </picture>
                         <div class="overlay">
                             <p class="portfolio-description">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -104,7 +224,31 @@
                     <li class="item">
                         
                         <div class="portfolio-image">
-                            <img src="./images/products-3.jpg" alt="Laptop with phone" width="370" height="294" class="picture">
+                            <picture>
+                                <source 
+                                    srcset="
+                                    ./images/products-3.jpg 1x, 
+                                    ./images/products-3-2x.jpg 2x"
+                                    
+                                    media="(min-width: 1200px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-3-tab.jpg 1x, 
+                                    ./images/products-3-tab-2x.jpg 2x"
+                                    
+                                    media="(min-width: 768px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-3-mob.jpg 1x, 
+                                    ./images/products-3-mob-2x.jpg 2x"
+                                    
+                                    media="(max-width: 767px)"
+                                >
+
+                                <img src="./images/products-3-mob.jpg" alt="Laptop with phone"  class="picture">
+                            </picture>
 
                         <div class="overlay">
                             <p class="portfolio-description">
@@ -121,7 +265,31 @@
                     <li class="item">
                         
                         <div class="portfolio-image">
-                            <img src="./images/products-4.jpg" alt="Man drives car in black gloves" width="370" height="294" class="picture">
+                            <picture>
+                                <source 
+                                    srcset="
+                                    ./images/products-4.jpg 1x, 
+                                    ./images/products-4-2x.jpg 2x"
+                                    
+                                    media="(min-width: 1200px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-4-tab.jpg 1x, 
+                                    ./images/products-4-tab-2x.jpg 2x"
+                                    
+                                    media="(min-width: 768px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-4-mob.jpg 1x, 
+                                    ./images/products-4-mob-2x.jpg 2x"
+                                    
+                                    media="(max-width: 767px)"
+                                >
+
+                                <img src="./images/products-4-mob.jpg" alt="Laptop with phone"  class="picture">
+                            </picture>
 
                         <div class="overlay">
                             <p class="portfolio-description">
@@ -139,7 +307,31 @@
                     <li class="item">
                         
                         <div class="portfolio-image">
-                            <img src="./images/products-5.jpg" alt="Different wallpapers on the phone" width="370" height="294" class="picture">
+                            <picture>
+                                <source 
+                                    srcset="
+                                    ./images/products-5.jpg 1x, 
+                                    ./images/products-5-2x.jpg 2x"
+                                    
+                                    media="(min-width: 1200px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-5-tab.jpg 1x, 
+                                    ./images/products-5-tab-2x.jpg 2x"
+                                    
+                                    media="(min-width: 768px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-5-mob.jpg 1x, 
+                                    ./images/products-5-mob-2x.jpg 2x"
+                                    
+                                    media="(max-width: 767px)"
+                                >
+
+                                <img src="./images/products-5-mob.jpg" alt="Different wallpapers on the phone"class="picture">
+                            </picture>
 
                     <div class="overlay">
                         <p class="portfolio-description">
@@ -157,7 +349,31 @@
                     <li class="item">
                         
                         <div class="portfolio-image">
-                            <img src="./images/products-6.jpg" alt="Smiling woman" width="370" height="294" class="picture">
+                            <picture>
+                                <source 
+                                    srcset="
+                                    ./images/products-6.jpg 1x, 
+                                    ./images/products-6-2x.jpg 2x"
+                                    
+                                    media="(min-width: 1200px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-6-tab.jpg 1x, 
+                                    ./images/products-6-tab-2x.jpg 2x"
+                                    
+                                    media="(min-width: 768px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-6-mob.jpg 1x, 
+                                    ./images/products-6-mob-2x.jpg 2x"
+                                    
+                                    media="(max-width: 767px)"
+                                >
+
+                                <img src="./images/products-6-mob.jpg" alt="Smiling woman" class="picture">
+                            </picture>
 
                         <div class="overlay">
                             <p class="portfolio-description">
@@ -174,7 +390,31 @@
                     <li class="item">
                         
                         <div class="portfolio-image">
-                            <img src="./images/products-7.jpg" alt="Photoes of articles" width="370" height="294" class="picture">
+                            <picture>
+                                <source 
+                                    srcset="
+                                    ./images/products-7.jpg 1x, 
+                                    ./images/products-7-2x.jpg 2x"
+                                    
+                                    media="(min-width: 1200px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-7-tab.jpg 1x, 
+                                    ./images/products-7-tab-2x.jpg 2x"
+                                    
+                                    media="(min-width: 768px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-7-mob.jpg 1x, 
+                                    ./images/products-7-mob-2x.jpg 2x"
+                                    
+                                    media="(max-width: 767px)"
+                                >
+
+                                <img src="./images/products-7-mob.jpg" alt="Photoes of articles"  class="picture">
+                            </picture>
 
                         <div class="overlay">
                             <p class="portfolio-description">
@@ -191,7 +431,31 @@
                     <li class="item">
                         
                         <div class="portfolio-image">
-                            <img src="./images/products-8.jpg" alt="Some vegetables in a bag" width="370" height="294" class="picture">
+                            <picture>
+                                <source 
+                                    srcset="
+                                    ./images/products-8.jpg 1x, 
+                                    ./images/products-8-2x.jpg 2x"
+                                    
+                                    media="(min-width: 1200px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-8-tab.jpg 1x, 
+                                    ./images/products-8-tab-2x.jpg 2x"
+                                    
+                                    media="(min-width: 768px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-8-mob.jpg 1x, 
+                                    ./images/products-8-mob-2x.jpg 2x"
+                                    
+                                    media="(max-width: 767px)"
+                                >
+
+                                <img src="./images/products-8-mob.jpg" alt="Some vegetables in a bag"class="picture">
+                            </picture>
 
                         <div class="overlay">
                             <p class="portfolio-description">
@@ -209,8 +473,31 @@
                     <li class="item">
                         
                         <div class="portfolio-image">
+                            <picture>
+                                <source 
+                                    srcset="
+                                    ./images/products-9.jpg 1x, 
+                                    ./images/products-9-2x.jpg 2x"
+                                    
+                                    media="(min-width: 1200px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-9-tab.jpg 1x, 
+                                    ./images/products-9-tab-2x.jpg 2x"
+                                    
+                                    media="(min-width: 768px)"
+                                >
+                                <source 
+                                    srcset="
+                                    ./images/products-9-mob.jpg 1x, 
+                                    ./images/products-9-mob-2x.jpg 2x"
+                                    
+                                    media="(max-width: 767px)"
+                                >
 
-                            <img src="./images/products-9.jpg" alt="Coffee making process" width="370" height="294" class="picture">
+                                <img src="./images/products-9-mob.jpg" alt="Coffee making process"  class="picture">
+                            </picture>
 
                           <div class="overlay">
                             <p class="portfolio-description">
@@ -229,7 +516,7 @@
         </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer section">
         <div class="container">
          <div class="row">
             <div class="address">
@@ -283,6 +570,7 @@
                     </li>
                  </ul>
              </div>
+             </div>
                 <div class="subscribe">
                     <h2 class="footer-title">
                         Subscribe
@@ -300,10 +588,15 @@
                         </button>
                     </div>
              </div>
-         </div>
         </div>
      </footer>
 
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+     <script defer src="./js/mobile-menu.js"></script>
 
     </main>
 </body>

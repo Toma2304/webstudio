@@ -164,6 +164,10 @@ img {
     color: var(--primary-bg-color);
 }
 
+.menu-open {
+    fill: var(--primary-text-color);
+}
+
 .mob-menu-list .item:not(:last-child) {
     margin-bottom: 40px;
 }

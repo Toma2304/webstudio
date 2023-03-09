@@ -183,6 +183,10 @@ img {
     color: var(--dark-accent);
 }
 
+.menu-open-icon {
+    fill: var(--title-text-color);
+}
+
 
 .mob-menu-contacts .item:not(:last-child){
     margin-bottom: 40px;

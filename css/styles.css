@@ -372,7 +372,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
 
-    text-align: center;
+    text-align: left;
 
     color: var(--primary-text-color);
 }
@@ -513,6 +513,10 @@ img {
 
 .clients-item:nth-child(2n){
     margin-left: 16px;
+}
+
+.clients-item:nth-child(5), .clients-item:nth-child(6){
+    margin-bottom: 0;
 }
 
 .clients-link:hover, 
@@ -1271,6 +1275,10 @@ img {
         margin-left: 0;
     }
 
+    .clients-item:nth-child(4){
+        margin-bottom: 0;
+    }
+
     /* FOOTER */
 
     .row {
@@ -1437,7 +1445,7 @@ img {
         .hero {
             background-image: 
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/hero-bg-2x.jpg);
+            url(../images/hero-bg.jpg);
         }
     }
 
